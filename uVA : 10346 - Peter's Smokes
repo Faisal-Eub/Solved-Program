@@ -1,0 +1,30 @@
+//problem link : https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1287
+
+#include<bits/stdc++.h>
+#define faster ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define ll long long int
+using namespace std;
+
+int main()
+{
+    faster
+    int n , k;
+    while (scanf("%d""%d",&n, &k) != EOF)
+    {
+        int a = 1 , sum2 = 0, sum1;
+        while (a)
+        {
+            int x = n/k;
+            int y = n % k;
+            sum1 = x+y;
+            sum2 = sum2 + (x*k);
+            if (sum1 < k)
+            {
+                a=0;
+                sum2 = sum2 + sum1;
+            }
+            n=sum1;
+        }
+        cout << sum2 << endl ;
+    }
+}
