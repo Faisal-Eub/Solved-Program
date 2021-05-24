@@ -1,0 +1,22 @@
+Link : https://codeforces.com/contest/1525/problem/A
+
+#include<bits/stdc++.h>
+#define faster ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define ll long long int
+using namespace std;
+
+int main ()
+{
+
+    int t ; cin >> t;
+    while (t--)
+    {
+        int n; cin >> n;
+        int g ;
+        g = 100 - n ;
+        int gcd = __gcd (n,g);
+
+        cout << n/gcd + g/gcd << endl ;
+
+    }
+}
